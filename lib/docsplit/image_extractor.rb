@@ -48,7 +48,7 @@ module Docsplit
         end
       end
     ensure
-      FileUtils.remove_entry_secure tempdir if File.exists?(tempdir)
+      FileUtils.rm_r tempdir if File.exists?(tempdir)
     end
 
 
